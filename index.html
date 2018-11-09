@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UFMT - Infocursos</title>
+    <link href="padrao-design/assets/css/estiloMeu.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="setupMetaData.js" defer></script>
+    <script src="inputools.js" defer></script>
+    <script src="multiFilter.js" defer></script>
+    <script src="listools.js" defer></script>
+    <script src="figurestools.js" defer></script>
+    <script src="updateInput.js" defer></script>
+    <script src="events.js" defer></script>
+
+  </head>
+  <body>
+    <datalist id="datalist-campus">
+    </datalist>
+    <datalist id="datalist-cursos">
+    </datalist>
+    <datalist id="datalist-ano">
+    </datalist>
+    <datalist id="datalist-turno">
+    </datalist>
+
+    <div id="barra-brasil">
+      <a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro</a>
+    </div>
+
+
+    <header id="head-align">
+      <header id="head">
+        <div id="logo">
+          <div class="logomg">
+            <img src="padrao-design/assets/img/ufmt_logo.png" width="146" height="145">
+          </div>
+          <span>Universidade Federal de Mato Grosso</span>
+          <h2>INFOCURSOS</h2>
+        </div>
+      </header>
+    </header>
+
+
+
+    <section id="sect-align"> <!-- div de alinhamento -->
+      <section id="sect"> <!-- começa div do conteúdo principal -->
+        <nav id="nav">
+          <div class="InfoItens">
+            <ul>
+            <!--items LI podem ser inseridos aqui-->
+              <li class="InfoIcon">
+                <a href="http://www.ufmt.br/ufmt/site/">
+                  <span class="glyphicon glyphicon-home"></span>
+                  &nbsp; Portal da UFMT
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div id="info-access">
+          <h2>Infocursos</h2>
+          <p>A todo o momento, as pessoas são surpreendidas por informações sobre fatos e/ou fenômenos em diversas áreas do conhecimento. Tais informações chegam ao público por meio de dados resultantes de mensurações realizadas pela Estatística. A Universidade Federal de Mato Grosso (UFMT) desempenha uma relevante função social ao comprometer-se com o ensino de diferentes áreas do saber. Neste sentido, a Universidade como uma instituição contribui com o desenvolvimento econômico regional, por meio do ensino, pesquisa e extensão que constituem o suporte necessário para o desenvolvimento científico, tecnológico e cultural do estado e do país. Diante da importância da estatística em auxiliar na tomada de decisões, e o papel da UFMT perante a sociedade, o Infocursos é uma plataforma online que visa a divulgação de indicadores estatísticos dos diversos cursos de graduação presenciais da UFMT.</p>
+          <!--div>
+            <img src="img1.png">
+          </div-->
+        </div>
+
+
+        <div id="account-access">
+          <h2 class="SectionName Left">Pesquisar Curso</h2>
+          <span class="Left">Complete os campos abaixo para acessar os indicadores.</span>
+          <div id="LoginForm" class="GrayBg">
+              <form>
+                <div class="form-group">
+                  <label for="datalist-campus" >Campus:</label>
+                  <input id="input-campus" list="datalist-campus" type="text" class="form-control" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="datalist-cursos">Curso:</label>
+                  <input id="input-cursos" list="datalist-cursos" type="text" class="form-control" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="datalist-turno">Turno:</label>
+                  <input id="input-turno" list="datalist-turno" type="text" class="form-control" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="datalist-ano">Ano:</label>
+                  <input id="input-ano" list="datalist-ano" type="text" class="form-control" autocomplete="off">
+                </div>
+                <button id="btn-pesquisar" type="button" class="btn btn-success" >Pesquisar</button>
+              </form>
+          </div>
+        </div>
+      </section> <!-- acaba div do conteúdo principal -->
+
+    </section> <!-- div de alinhamento -->
+
+    <div class="container" id="galeryFigures">
+      <div class="row" >
+        <div class="col" id="fig1"></div>
+        <div class="col" id="fig2"></div>
+      </div>
+      <div class="row">
+        <div class="col" id="fig3"></div>
+        <div class="col" id="fig4"></div>
+      </div>
+      <div class="row">
+        <div class="col" id="fig5"></div>
+        <div class="col" id="fig6"></div>
+      </div>
+    </div>
+
+    <div id="footerAnimado">
+      <img src="https:/sistemas.ufmt.br/ufmt.ava/Content/img/rodape_animado.gif" alt="Imagem animada, viola de coxo e Tuiui�">
+    </div>
+
+
+    <footer id="footer-align">
+      <footer id="footer">
+
+        <p><br><br>
+        Copyright © 2011 - Universidade Federal de Mato Grosso - UFMT<br>
+        Av. Fernando Correa da Costa, nº 2367 - Bairro Boa
+        Esperança. Cuiabá - MT - 78060-900</p>
+        <p>Fone/PABX: +55 (65) 3615-8000</p>
+      </footer>
+
+
+    </footer>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="padrao-design/assets/js/bootstrap.min.js"></script>
+    <script src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+  </body>
+
+</html>
