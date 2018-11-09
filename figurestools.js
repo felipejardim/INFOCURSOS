@@ -7,6 +7,7 @@ function buildFigures(){
         "Cod":chosens[0].Cod,
         "typeChart":['BIN','BIM','PIN','PIM','BAR','PIT']
       }
+      document.getElementById('titleGalery').innerHTML=`<h2>${chosens[0].Curso} / ${chosens[0].Campus}</h2>`
       updateFigure(chart)
     }
   )

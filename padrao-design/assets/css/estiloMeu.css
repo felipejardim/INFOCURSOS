@@ -113,7 +113,7 @@ a:hover {
 
 #sect {
 	clear: both;
-	min-height: 650px;
+	min-height: 550px;
 	width: 1000px;
 	margin-top: 0px;
 	margin-right: auto;
@@ -303,11 +303,36 @@ a:hover {
 	margin-left: 150px;
 	margin-bottom: 100px;
 }
-#footerAnimado {
-  margin-right: auto;
-	margin-left: auto;
-	text-align: center;
+
+element.style {
 }
-#title-graphics{
-	display:none;
+.footerAnimado img {
+    margin: 0 auto;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footerAnimado {
+    background-image: url(../img/bg_ext_rodape.jpg);
+    text-align: center;
+    height: 135px;
+		background-position: 0 -10px;
+			background-position-x: 0px;
+			background-position-y: -10px;
+		background-repeat: repeat-x;
+			background-repeat-x: repeat;
+			background-repeat-y: no-repeat;
+}
+#titleGalery h2{
+	text-align: center;
+	font-weight: bold;
+
 }
