@@ -2,10 +2,9 @@
 const input = {
     "campus": document.getElementById('input-campus'),
     "cursos": document.getElementById('input-cursos'),
-    "anos": document.getElementById('input-ano'),
     "turnos": document.getElementById('input-turno'),
-    "botão":document.getElementById('btn-pesquisar')
-}
+    "anos": document.getElementById('input-ano')
+  }
 
 
 function getInputs() {
@@ -15,14 +14,14 @@ function getInputs() {
 
   const r = {}
 
-  if (turno.trim() !== "") {
-    r.Turno = turno
-  }
-  if (campus.trim() !== "") {
+  if (campus.trim() !== ""){
     r.Campus = campus
   }
-  if (curso.trim() !== "") {
+  if (curso.trim() !== ""){
     r.Curso = curso
+  }
+  if (turno.trim() !== ""){
+    r.Turno = turno
   }
 
   return r

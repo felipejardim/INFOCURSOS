@@ -10,10 +10,12 @@ function buildDatalist(){
       const campus = campusOf(chosens)
       const cursos = cursosOf(chosens)
       const turnos = turnosOf(chosens)
+      const anos = anosOf(chosens)
 
       updateDatalist(datalist.campus, campus)
       updateDatalist(datalist.cursos, cursos)
       updateDatalist(datalist.turnos, turnos)
+
 
       return chosens
     }
@@ -25,3 +27,4 @@ function buildDatalist(){
 const campusOf = match("Campus")
 const cursosOf = match("Curso")
 const turnosOf = match("Turno")
+const anosOf = match("Ano")

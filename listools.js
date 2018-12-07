@@ -2,7 +2,7 @@
 const datalist = {
     "campus": document.getElementById('datalist-campus'),
     "cursos": document.getElementById('datalist-cursos'),
-    "ano": document.getElementById('datalist-ano'),
+    "anos": document.getElementById('datalist-ano'),
     "turnos": document.getElementById('datalist-turno')
 }
 
@@ -15,5 +15,6 @@ const match = prop => e => e.map(
 
 function updateDatalist (datalist, options) {
   datalist.innerHTML =  options.reduce((a, b) => a + `<option value="${b}"></option>`, '')
-  
+  return datalist
+
 }

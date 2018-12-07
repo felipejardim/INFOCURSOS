@@ -50,7 +50,7 @@ a:hover {
 #logo {
 	float: left;
 	height: 155px;
-	min-width: 650px;
+	min-width: 500px;
 	margin-top: 20px;
 }
 #logo span {
@@ -335,4 +335,7 @@ img {
 	text-align: center;
 	font-weight: bold;
 
+}
+.alert {
+	display:none;
 }
