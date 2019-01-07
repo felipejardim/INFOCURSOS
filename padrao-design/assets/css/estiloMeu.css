@@ -336,6 +336,10 @@ img {
 	font-weight: bold;
 
 }
-.alert {
+#alert-emptyfields{
 	display:none;
+}
+
+.appear {
+	display:block;
 }

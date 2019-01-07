@@ -1,7 +1,6 @@
+// buildtool gera uma promessa com os valores compatíveis com os inputs
 function buildFigures(){
-  metaData.then(
-    buildDatalist
-  ).then(
+  buildDatalist().then(
     chosens => {
       const chart = {
         "Cod":chosens[0].Cod,

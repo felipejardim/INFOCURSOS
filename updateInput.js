@@ -15,6 +15,7 @@ function buildDatalist(){
       updateDatalist(datalist.campus, campus)
       updateDatalist(datalist.cursos, cursos)
       updateDatalist(datalist.turnos, turnos)
+      updateDatalist(datalist.anos, anos)
 
 
       return chosens
@@ -22,6 +23,13 @@ function buildDatalist(){
 )
 }
 
+function buildDatalistAno(){
+  metaData.then(e => {
+      var anos = match('Ano')(e)
+      updateDatalist(datalist.anos, anos)
+    }
+  )
+}
 
 // atributesMatch
 const campusOf = match("Campus")
