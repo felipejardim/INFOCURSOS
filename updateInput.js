@@ -16,8 +16,7 @@ function buildDatalist(){
       updateDatalist(datalist.cursos, cursos)
       updateDatalist(datalist.turnos, turnos)
       updateDatalist(datalist.anos, anos)
-
-
+      
       return chosens
     }
 )
