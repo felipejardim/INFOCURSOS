@@ -1,3 +1,4 @@
+//Cria o arquivo Json responsavel pela alimentação dos dados do site
 const csv2json = e => e.split('\n').map(
   arr => arr.split(';')
 ).map((e, i, table) => ({

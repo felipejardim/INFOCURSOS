@@ -6,7 +6,7 @@ const input = {
     "anos": document.getElementById('input-ano')
   }
 
-
+//cria um objeto com as informações dos campos que o usuario deseja filtrar no campo "Pesquisar curso" 
 function getInputs() {
   const campus = input.campus.value
   const curso = input.cursos.value
