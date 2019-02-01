@@ -47,6 +47,7 @@ a:hover {
 #head.h2 {
 	font-family: sans-serif;
 }
+
 #logo {
 	float: left;
 	height: 155px;
@@ -342,4 +343,11 @@ img {
 
 .appear {
 	display:block;
+}
+.error h4{
+	margin: 200px auto;
+	width: 200px;
+	background:#F2F2F2;
+	padding: 20px;
+	color: black;
 }
