@@ -167,6 +167,11 @@ a:hover {
 	margin-left: 25px;
 	text-align: justify;
 }
+
+#info-access h2 {
+	color: #333;
+}
+
 #info-access ul {
 	float: left;
 	margin-left: -20px;
