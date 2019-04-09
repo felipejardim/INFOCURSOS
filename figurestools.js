@@ -19,7 +19,7 @@ function buildFigures(){
             if (response.status===200){
               return response.blob().then(function(myBlob) {
                 var objectURL = URL.createObjectURL(myBlob);
-                Object.values(myImages)[i].innerHTML=`<figure class="figure"><img src="${objectURL}" class="figure-img img-fluid rounded"></figure>\n<p id="legenda-${i}">${insereLegenda(i)}</p>`
+                Object.values(myImages)[i].innerHTML=`<p id="legenda-${i}" style="text-align: center"><strong>${insereLegenda(i)}</strong</p><figure class="figure"><img src="${objectURL}" class="figure-img img-fluid rounded"></figure>\n`
               })
             }else{
               myImages[i].innerHTML= `<div class="error"><h4>Ah, não! Não há dados sobre esse indicador</h4></div>`
@@ -29,7 +29,28 @@ function buildFigures(){
     })
 }
 
-//terminar de criar a legenda
 let insereLegenda = function (i){
-    return (i+1)+'º gráfico';
+  switch(i){
+    case 0:
+    return "Districuição das Idades - Alunos Ingressantes";
+
+    case 1:
+    return "Distribuição das Idades - Alunos Matroculados";
+
+    case 2:
+    return "Distribuição dos Alunos Ingressantes por Sexo";
+
+    case 3:
+    return "Distribuição dos Alunos Matriculados por Sexo";
+
+    case 4:
+    return "Nota de Corte no SISU por Tipo de Vaga";
+
+    case 5:
+    return "Distribuição dos Alunos por Tipo de Ingresso";
+
+    default:
+    return "Você não deveria me ver";
+  }  
+
   }
