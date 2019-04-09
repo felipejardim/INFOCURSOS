@@ -168,6 +168,16 @@ a:hover {
 	text-align: justify;
 }
 
+#homepage {
+	padding: 4px 4px 3px 4px;
+}
+
+#homepage:focus {
+	background-color: white;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #011e51;
+}
 
 #botaoSobre {
 	padding: 4px 4px 3px 4px;
