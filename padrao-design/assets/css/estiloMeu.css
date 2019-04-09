@@ -160,7 +160,7 @@ a:hover {
 	background-color: #F2F2F2;
 }
 
-#info-access {
+.info-access {
 	float:left;
 	width: 490px;
 	margin-top: 30px;
@@ -168,17 +168,63 @@ a:hover {
 	text-align: justify;
 }
 
-#info-access h2 {
+
+#botaoSobre {
+	padding: 4px 4px 3px 4px;
+}
+
+#botaoSobre:focus {
+	background-color: white;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #011e51;
+}
+
+#botaoMetodologia {
+	padding: 4px 4px 3px 4px;
+}
+
+#botaoMetodologia:focus {
+	background-color: white;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #011e51;
+}
+
+#botaoEquipe {
+	padding: 4px 4px 3px 4px;
+}
+
+#botaoEquipe:focus {
+	background-color: white;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #011e51;
+}
+
+#sobre {
+	display: inline;
+}
+
+#metodologia {
+	display: none;
+}
+
+#equipe {
+	display: none;
+}
+
+.info-access h2 {
 	color: #333;
 }
 
-#info-access ul {
+.info-access ul {
 	float: left;
 	margin-left: -20px;
 	width: 470px;
 	margin-top: 30px;
 }
-#info-access li {
+.info-access li {
 	font-size: 12px;
 	color: #333;
 	margin-bottom: 10px;
