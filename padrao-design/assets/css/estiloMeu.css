@@ -132,7 +132,17 @@ a:hover {
 	margin-top: 30px;
 }
 
+#lista-info {
+	width: 100%;
+	margin-top: 0px;
+	/*list-style-type: symbols(cyclic"-")*/
+}
 
+
+.borda-bonitinha {
+	mask-border-slice: 100%;
+	/*border: 2px solid #42719b;*/
+}
 
 .SectionName {
 	background-image: url(../img/arrowicon.gif);
