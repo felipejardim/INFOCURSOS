@@ -1,5 +1,8 @@
 const botao= document.getElementById('btn-pesquisar')
 const alert= document.getElementById('alert-emptyfields')
+const reset= document.getElementById('btn-reset')
+
+
 
 //gerencia os eventos e executa as funções correspondentes
 document.body.onload = buildDatalist
@@ -19,4 +22,12 @@ botao.onclick = function (){
   }else{
     alert.style.display='block'
   }
+}
+
+reset.onclick = function(){
+  input.campus.value = "";
+  input.cursos.value = "";
+  input.turnos.value = "";
+  input.anos.value = "";
+  buildDatalist();
 }

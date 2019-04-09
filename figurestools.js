@@ -19,7 +19,7 @@ function buildFigures(){
             if (response.status===200){
               return response.blob().then(function(myBlob) {
                 var objectURL = URL.createObjectURL(myBlob);
-                Object.values(myImages)[i].innerHTML=`<figure class="figure"><img src="${objectURL}" class="figure-img img-fluid rounded"></figure>`
+                Object.values(myImages)[i].innerHTML=`<figure class="figure"><img src="${objectURL}" class="figure-img img-fluid rounded"></figure>\n<p id="legenda-${i}">${insereLegenda(i)}</p>`
               })
             }else{
               myImages[i].innerHTML= `<div class="error"><h4>Ah, não! Não há dados sobre esse indicador</h4></div>`
@@ -28,3 +28,8 @@ function buildFigures(){
       })
     })
 }
+
+//terminar de criar a legenda
+let insereLegenda = function (i){
+    return (i+1)+'º gráfico';
+  }
