@@ -22,7 +22,7 @@ function buildFigures(){
                 Object.values(myImages)[i].innerHTML=`<p id="legenda-${i}" style="text-align: center"><strong>${insereLegenda(i)}</strong</p><figure class="figure"><img src="${objectURL}" class="figure-img img-fluid rounded"></figure>\n`
               })
             }else{
-              myImages[i].innerHTML= `<div class="error"><h4>Ah, não! Não há dados sobre esse indicador</h4></div>`
+              myImages[i].innerHTML= `<p id="legenda-${i}" style="text-align: center"><strong>${insereLegenda(i)}</strong</p><div class="error"><h4>Ah, não! Não há dados sobre esse indicador</h4></div>`
             }
           })
       })
