@@ -19,7 +19,7 @@ function buildFigures(){
             if (response.status===200){
               return response.blob().then(function(myBlob) {
                 var objectURL = URL.createObjectURL(myBlob);
-                Object.values(myImages)[i].innerHTML=`<p id="legenda-${i}" style="text-align: center"><strong>${insereLegenda(i)}</strong</p><figure class="figure"><img src="${objectURL}" class="figure-img img-fluid rounded"></figure>\n`
+                Object.values(myImages)[i].innerHTML=`<figcaption class="figure-caption atext-center" id="legenda-${i}" style="atext-align: center; color: black"><strong>${insereLegenda(i)}</strong></figcaption><figure class="figure "><img src="${objectURL}" id="imagem-${i}" class="figure-img img-fluid rounded" style="max-width: 530px;"></figure>\n`
               })
             }else{
               myImages[i].innerHTML= `<p id="legenda-${i}" style="text-align: center"><strong>${insereLegenda(i)}</strong</p><div class="error"><h4>Ah, não! Não há dados sobre esse indicador</h4></div>`
@@ -27,6 +27,8 @@ function buildFigures(){
           })
       })
     })
+
+    document.getElementById('imagem-6').style.marginLeft = '50%'
 }
 
 let insereLegenda = function (i){
@@ -57,3 +59,4 @@ let insereLegenda = function (i){
   }  
 
   }
+
