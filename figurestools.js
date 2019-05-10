@@ -1,5 +1,5 @@
 var myImages= document.getElementsByClassName('col')
-var typeChart=['BIN','BIM','PIN','PIM','BAR','PIT']
+var typeChart=['BIN','BIM','PIN','PIM','BAR','PIT','SIS']
 /***
 Função que permite a visualização dos gráficos.
 ****/
@@ -44,10 +44,13 @@ let insereLegenda = function (i){
     return "Distribuição dos Alunos Matriculados por Sexo";
 
     case 4:
-    return "Nota de Corte no SISU por Tipo de Vaga";
+    return "Distribuição dos Alunos Ingressantes por Tipo de Ingresso";
 
     case 5:
-    return "Distribuição dos Alunos por Tipo de Ingresso";
+    return "Distribuição dos Alunos Ingressantes por Tipo de Vaga";
+
+    case 6:
+    return "Nota de Corte no SISU por Tipo de Vaga"
 
     default:
     return "Você não deveria me ver";
