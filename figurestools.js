@@ -34,10 +34,10 @@ function buildFigures(){
 let insereLegenda = function (i){
   switch(i){
     case 0:
-    return "Districuição das Idades - Alunos Ingressantes";
+    return "Distribuição das Idades - Alunos Ingressantes";
 
     case 1:
-    return "Distribuição das Idades - Alunos Matroculados";
+    return "Distribuição das Idades - Alunos Matriculados";
 
     case 2:
     return "Distribuição dos Alunos Ingressantes por Sexo";
