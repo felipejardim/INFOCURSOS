@@ -20,7 +20,7 @@ function buildFigures(){
             if (response.status===200){
               return response.blob().then(function(myBlob) {
                 var objectURL = URL.createObjectURL(myBlob);
-                Object.values(myImages)[i].innerHTML=`<figcaption class="figure-caption atext-center" id="legenda-${i}" style="atext-align: center; color: black"><strong>${insereLegenda(i)}</strong></figcaption><figure class="figure "><img src="${objectURL}" id="imagem-${i}" class="figure-img img-fluid rounded" style="max-width: 530px;"></figure>\n`
+                Object.values(myImages)[i].innerHTML=`<div><figure class="figure " style="margin-top: 50px"><figcaption class="figure-caption text-center" id="legenda-${i}" style=" color: black"><strong>${insereLegenda(i)}</strong></figcaption><img src="${objectURL}" id="imagem-${i}" class="figure-img img-fluid rounded" style="max-width: 530px;"></figure></div>\n`
               })
             }else{
               myImages[i].innerHTML= `<p id="legenda-${i}" style="text-align: center"><strong>${insereLegenda(i)}</strong</p><div class="error"><h4>Ah, não! Não há dados sobre esse indicador</h4></div>`
