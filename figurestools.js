@@ -6,6 +6,7 @@ Função que permite a visualização dos gráficos.
 function buildFigures(){
   buildDatalist()
     .then(chosens => {
+      let ano = document.getElementById('input-ano').value
       // seleciona o cod correspondente ao curso escolhido pelo usuario
       var cod = chosens[0].Cod
       //escreve na tela "nome do curso"/"campus"
@@ -14,7 +15,7 @@ function buildFigures(){
         //busca a imagem
         //Caso a imagem exista ela é imprimida na tela
         //caso não a mensagem "Ah, não! Não há dados sobre esse indicador" aparece  
-        fetch(`2017/${e}/${cod}.jpeg`)
+        fetch(`${ano}/${e}/${cod}.jpeg`)
           .then(function(response) {
             if (response.status===200){
               return response.blob().then(function(myBlob) {
