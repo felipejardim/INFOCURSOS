@@ -1,10 +1,12 @@
-pastas = ['BAR', 'BIN', 'BIM', 'PIM', 'PIN', 'PIT', 'SIS']
+pastas    = ['BIN','BIM','PIN','PIM','BAR','PIT','SIS']
+descPasta = ['Distribuição das Idades - Alunos Ingressantes', 'Distribuição das Idades - Alunos Matriculados', 'Distribuição dos Alunos Ingressantes por Sexo', 'Distribuição dos Alunos Ingressantes por Sexo', 'Distribuição dos Alunos Ingressantes por Tipo de Ingresso', 'Distribuição dos Alunos Ingressantes por Tipo de Vaga', 'Nota de Corte no SISU por Tipo de Vaga']
 
+z=0
 for pasta in pastas:
-    #input('1')
+    
     x = 1
     nf = []
-    print('Em '+pasta+': ')
+    print('Em '+pasta+' ('+descPasta[z]+'): ')
     
     while(x<=133):
         try:
@@ -15,3 +17,4 @@ for pasta in pastas:
         x=x+1
 
     print(nf)
+    z=z+1
