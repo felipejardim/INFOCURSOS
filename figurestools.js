@@ -24,7 +24,7 @@ function buildFigures(){
                 Object.values(myImages)[i].innerHTML=`<div><figure class="figure " style="margin-top: 50px"><figcaption class="figure-caption text-center" id="legenda-${i}" style=" color: black"><strong>${insereLegenda(i)}</strong></figcaption><img src="${objectURL}" id="imagem-${i}" class="figure-img img-fluid rounded" style="max-width: 530px;"></figure></div>\n`
               })
             }else{
-              if(exeptions.indexOf(cod) !== 0){
+              if(exeptions.indexOf(parseInt(cod)) !== -1){
                 if(cod != 64){
                   myImages[i].innerHTML= `<p id="legenda-${i}" style="text-align: center"><strong>${insereLegenda(i)}</strong</p><div class="error"><h4>Não há dados! Provavelmente o curso foi extinto.</h4></div>`
                 }
