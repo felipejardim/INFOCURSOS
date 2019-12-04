@@ -1,7 +1,7 @@
-BIN -> Distribuição das Idades - Alunos Ingressantes 
-BIM -> Distribuição das Idades - Alunos Matriculados
-PIN -> Distribuição dos Alunos Ingressantes por Sexo
-PIM -> Distribuição dos Alunos Ingressantes por Sexo
-BAR -> Distribuição dos Alunos Ingressantes por Tipo de Ingresso
-PIT -> Distribuição dos Alunos Ingressantes por Tipo de Vaga
+BIN -> DistribuiÃ§Ã£o das Idades - Alunos Ingressantes 
+BIM -> DistribuiÃ§Ã£o das Idades - Alunos Matriculados
+PIN -> DistribuiÃ§Ã£o dos Alunos Ingressantes por Sexo
+PIM -> DistribuiÃ§Ã£o dos Alunos Matriculados por Sexo
+BAR -> DistribuiÃ§Ã£o dos Alunos Ingressantes por Tipo de Ingresso
+PIT -> DistribuiÃ§Ã£o dos Alunos Ingressantes por Tipo de Vaga
 SIS -> Nota de Corte no SISU por Tipo de Vaga
